@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    public/    [L]
+    RewriteRule    (.*) public/$0    [L]
+    Options +Indexes +MultiViews +FollowSymlinks
+ </IfModule>
